@@ -1,0 +1,17 @@
+header {
+    background-color: aquamarine;
+    height: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+} 
+
+li {
+    display: inline-block;
+    margin: 6px 14px;
+    height: 100%;
+}
