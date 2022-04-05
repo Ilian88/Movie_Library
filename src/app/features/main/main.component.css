@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 92vh;
+    width: 100%;
+}
+
+.header {
+    grid-column:1/4;
+    margin: auto;
+    box-sizing: content-box;
+}

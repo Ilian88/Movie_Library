@@ -1,0 +1,40 @@
+.container {
+    background-image: url('https://image.roku.com/developer_channels/prod/ac55ad157c193bd0ee606693bc03eb2824079c2f81c26e0a768b6df0b8469756.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 91vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    height: 60vh;
+    width: 65%;
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.button {
+    margin-top: 14px;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: aqua;
+    padding: 4px 6px;
+    border: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    font-weight: bold;
+    font-style: italic;
+}

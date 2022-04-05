@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeaturesComponent } from './features/features.component';
 import { HomeComponent } from './features/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './features/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     FeaturesComponent,
-    HomeComponent
+    HomeComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
