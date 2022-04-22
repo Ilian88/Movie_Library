@@ -1,9 +1,11 @@
-.container {
+.contains_ {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    height: 92vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 82vh;
     width: 100%;
+    overflow: auto;
+    justify-content: space-evenly;
 }
 
 .header {
@@ -11,3 +13,10 @@
     margin: auto;
     box-sizing: content-box;
 }
+
+.example-card {
+    max-width: 300px;
+    max-height: 200px;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+  }

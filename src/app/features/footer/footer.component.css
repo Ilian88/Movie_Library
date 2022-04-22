@@ -1,7 +1,3 @@
-
-.footer {
-    width: 100%;
-    height: 1.5rem;
-    background-color: aquamarine;
-    margin-top: 12px;
+.footer_ {
+    position: sticky;
 }

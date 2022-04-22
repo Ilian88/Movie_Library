@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './features/main/main.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { LoginComponent } from './features/login/login.component';
+import {MatCardModule} from '@angular/material/card'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { LoginComponent } from './features/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
