@@ -1,14 +1,12 @@
-.container {
-  height: 82vh;
-  display: grid;
-  grid-template-rows: 0.5fr 2fr;
-  max-width: 60%;
-  flex-wrap: nowrap;
+.heading {
+    text-align: center;
 }
 
-.heading {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-top: 1rem
+small {
+    font-style: italic;
+}
+
+.container_ {
+    max-width: 60%;
+    margin: auto;
 }

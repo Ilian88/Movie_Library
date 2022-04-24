@@ -3,7 +3,7 @@
     display: grid;
     grid-template-rows: 0.5fr 2fr;
     max-width: 60%;
-    flex-wrap: nowrap;
+    
   }
   
   .heading {
@@ -11,4 +11,8 @@
     justify-content: center;
     margin: auto;
     padding-top: 1rem
+  }
+
+  small {
+    font-style: italic;
   }

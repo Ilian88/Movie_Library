@@ -10,8 +10,11 @@ import { HomeComponent } from './features/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './features/main/main.component';
 import { FooterComponent } from './features/footer/footer.component';
-import { LoginComponent } from './features/login/login.component';
+import { LoginComponent } from './authorization/login/login.component';
 import {MatCardModule} from '@angular/material/card'; 
+import { FormsModule, ReactiveFormsModule,FormGroup } from '@angular/forms';
+import { RegisterComponent } from './authorization/register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -21,14 +24,16 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     MainComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
