@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserService } from 'src/app/user.service';
+import { IUser } from 'src/app/interface/iuser';
+import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-register',
@@ -22,5 +24,9 @@ export class RegisterComponent implements OnInit {
     gender : new FormControl('', [Validators.required])
   });
 
+
+  registerUser(formData : IUser) {
+    this.userService.register(formData);
+  }
   
 }

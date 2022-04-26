@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ApiService } from 'src/app/api.service';
+import { IMovie } from 'src/app/interface/IMovie';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
   }
+
+  movies: Observable<IMovie[]>  = this.apiService.getAllMovies$();
 
 }

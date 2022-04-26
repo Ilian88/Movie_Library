@@ -2,7 +2,7 @@
   <div class="heading mt-2">
     <h2 class="heading">Sign Up</h2>
   </div>
-  <form [formGroup]="registerFormGroup">
+  <form [formGroup]="registerFormGroup" (ngSubmit)="registerUser(registerFormGroup.value)">
     <div class="form-group">
       <label for="email">Email address</label>
       <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"

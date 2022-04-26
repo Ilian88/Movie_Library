@@ -14,6 +14,10 @@ import { LoginComponent } from './authorization/login/login.component';
 import {MatCardModule} from '@angular/material/card'; 
 import { FormsModule, ReactiveFormsModule,FormGroup } from '@angular/forms';
 import { RegisterComponent } from './authorization/register/register.component';
+import { ApiService } from './api.service';
+import { HttpClientModule } from '@angular/common/http';
+import { SingleMovieComponent } from './features/main/single-movie/single-movie.component';
+
 
 
 @NgModule({
@@ -25,7 +29,8 @@ import { RegisterComponent } from './authorization/register/register.component';
     MainComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SingleMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +38,10 @@ import { RegisterComponent } from './authorization/register/register.component';
     BrowserAnimationsModule,
     MatCardModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
